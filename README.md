@@ -1,5 +1,4 @@
-# phoenix_liveview_snippets
-Phoenix LiveView snippets for Sublime Text
+# Phoenix LiveView snippets for Sublime Text
 
 Taken from the Phoenix LiveView course from The Pragmatic Studio.
 
