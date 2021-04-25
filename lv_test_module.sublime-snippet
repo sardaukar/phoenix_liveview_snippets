@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+defmodule LiveViewStudioWeb.${1}Test do
+  use LiveViewStudioWeb.ConnCase, async: true
+
+  import Phoenix.LiveViewTest
+
+  ${0}
+end]]></content>
+  <tabTrigger>lvtest</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView test module</description>
+</snippet>

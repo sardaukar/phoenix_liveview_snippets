@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+<%= if $1, do: "{$1}" %>]]></content>
+  <tabTrigger>eifa</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx if for attribute</description>
+</snippet>

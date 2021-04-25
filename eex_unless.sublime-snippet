@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<%= unless $1 do %>
+  $2
+<% end %>]]></content>
+  <tabTrigger>eunless</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx  unless</description>
+</snippet>

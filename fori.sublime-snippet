@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<%= for ${1:item} <- @$1s do %>
+  $2
+<% end %>]]></content>
+  <tabTrigger>efori</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx for comprehension with items</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+def mount(_params, _session, socket) do
+  socket = assign(socket, ${1:key}: ${2:value})
+  {:ok, socket}
+end]]></content>
+  <tabTrigger>mount</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView mount function</description>
+</snippet>

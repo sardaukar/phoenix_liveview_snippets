@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+def handle_info(${1:message}, socket) do
+  socket = assign(socket, ${2:key}: ${3:value})
+  {:noreply, socket}
+end]]></content>
+  <tabTrigger>hi</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView handle_info function</description>
+</snippet>

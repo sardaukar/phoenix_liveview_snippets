@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+defmodule LiveViewStudioWeb.${1}Component do
+  use LiveViewStudioWeb, :live_component
+end]]></content>
+  <tabTrigger>lc</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveComponent module</description>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+<% else %>]]></content>
+  <tabTrigger>eelse</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx else</description>
+</snippet>

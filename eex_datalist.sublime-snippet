@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<datalist id="${1}">
+  ${0}
+</datalist>
+]]></content>
+  <tabTrigger>data</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx datalist</description>
+</snippet>

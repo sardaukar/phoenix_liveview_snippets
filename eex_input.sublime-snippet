@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<input type="text" name="${1}" value="${2}"
+       placeholder="${3}" />]]></content>
+  <tabTrigger>input</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx text input</description>
+</snippet>

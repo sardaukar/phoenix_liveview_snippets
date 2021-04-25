@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+def render(assigns) do
+  ~L"""
+  ${0}
+  """
+end]]></content>
+  <tabTrigger>rend</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView render function</description>
+</snippet>

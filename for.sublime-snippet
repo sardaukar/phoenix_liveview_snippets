@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<%= for ${1:item} <- @$1s do %>
+  $2
+<% end %>]]></content>
+  <tabTrigger>efor</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx for</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+def handle_params(params, _url, socket) do
+  {:noreply, socket}
+end]]></content>
+  <tabTrigger>hp</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView handle_params function</description>
+</snippet>

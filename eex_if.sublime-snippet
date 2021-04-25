@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<%= if $1 do %>
+  $2
+<% end %>]]></content>
+  <tabTrigger>eif</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx if</description>
+</snippet>

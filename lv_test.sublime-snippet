@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+test "${1:description}", %{conn: conn} do
+  {:ok, view, _html} = live(conn, "${2:path}")
+  ${0}
+end]]></content>
+  <tabTrigger>test</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView test</description>
+</snippet>

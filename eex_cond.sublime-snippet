@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<%= cond do %>
+  <% $1 -> %>
+    $2
+  <% true -> %>
+    $3
+<% end %>]]></content>
+  <tabTrigger>econd</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>EEx cond</description>
+</snippet>

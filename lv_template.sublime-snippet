@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+~L"""
+${0}
+"""]]></content>
+  <tabTrigger>lt</tabTrigger>
+  <scope>source.elixir</scope>
+  <description>LiveView inline template</description>
+</snippet>
