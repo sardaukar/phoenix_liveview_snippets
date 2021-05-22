@@ -2,32 +2,82 @@
 
 Taken from the Phoenix LiveView course from The Pragmatic Studio.
 
-Zip these up into a file, rename it to `something.sublime-package` and copy it over to `~/.config/sublime-text/Installed Packages`. To be hosted on PackageControl some day.
+Place these in a folder and copy it over to `~/.config/sublime-text/Packages`. To be hosted on PackageControl some day.
 
 Included:
 
-```eex_checkbox_input.sublime-snippet
-eex_cond.sublime-snippet
-eex_datalist.sublime-snippet
-eex_else.sublime-snippet
-eex_end_tag.sublime-snippet
-eex_hidden_input.sublime-snippet
-eex_if.sublime-snippet
-eex_if_else.sublime-snippet
-eex_ifa.sublime-snippet
-eex_input.sublime-snippet
-eex_render_block.sublime-snippet
-eex_unless.sublime-snippet
-for.sublime-snippet
-fori.sublime-snippet
-lc_module.sublime-snippet
-lv_handle_event.sublime-snippet
-lv_handle_info.sublime-snippet
-lv_handle_params.sublime-snippet
-lv_module.sublime-snippet
-lv_mount.sublime-snippet
-lv_rend.sublime-snippet
-lv_template.sublime-snippet
-lv_test.sublime-snippet
-lv_test_module.sublime-snippet
-```
+- `checkbox` -> `<input type="checkbox" id="${1}" name="${2}" value="${3}"/>`
+- `econd` -> ```<%= cond do %>
+  <% $1 -> %>
+    $2
+  <% true -> %>
+    $3
+<% end %>```
+- `data` -> ```<datalist id="${1}">
+  ${0}
+</datalist>```
+- `eelse` -> `<% else %>`
+- `eend` -> `% end %>`
+- `hidden` -> ```<input type="hidden" name="${1}" value="${2}" />```
+- `eif` -> ```<%= if $1 do %>
+  $2
+<% end %>```
+- `eife` -> ```<%= if $1 do %>
+  $2
+<% else %>
+  $3
+<% end %>```
+- `eifa` -> ```<%= if $1, do: "{$1}" %>```
+- `input` -> ```<input type="text" name="${1}" value="${2}"
+       placeholder="${3}" />```
+- `et` -> ```<%= $1 %>```
+- `eunless` -> ```%= unless $1 do %>
+  $2
+<% end %>```
+- `efor` -> ```<%= for ${1:item} <- @$1s do %>
+  $2
+<% end %>```
+- `efori` -> ```<%= for ${1:item} <- @$1s do %>
+  $2
+<% end %>```
+- `lc` -> ```defmodule LiveViewStudioWeb.${1}Component do
+  use LiveViewStudioWeb, :live_component
+end]```
+- `he` -> ```def handle_event(${1:event}, _, socket) do
+  socket = assign(socket, ${2:key}: ${3:value})
+  {:noreply, socket}
+end```
+- `hi` -> ```def handle_info(${1:message}, socket) do
+  socket = assign(socket, ${2:key}: ${3:value})
+  {:noreply, socket}
+end```
+- `hp` -> ```def handle_params(params, _url, socket) do
+  {:noreply, socket}
+end```
+- `lv` -> ```defmodule LiveViewStudioWeb.${1}Live do
+  use LiveViewStudioWeb, :live_view
+end```
+- `mount` -> ```def mount(_params, _session, socket) do
+  socket = assign(socket, ${1:key}: ${2:value})
+  {:ok, socket}
+end```
+- `rend` -> ```def render(assigns) do
+  ~L"""
+  ${0}
+  """
+end```
+- `lt` -> ```~L"""
+${0}
+"""```
+- `test` -> ```test "${1:description}", %{conn: conn} do
+  {:ok, view, _html} = live(conn, "${2:path}")
+  ${0}
+end```
+- `lvtest` -> ```defmodule LiveViewStudioWeb.${1}Test do
+  use LiveViewStudioWeb.ConnCase, async: true
+  import Phoenix.LiveViewTest
+  ${0}
+end```
+
+
+Pull requests for improvements welcome.
