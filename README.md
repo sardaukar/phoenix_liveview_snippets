@@ -2,7 +2,11 @@
 
 Taken from the Phoenix LiveView course from The Pragmatic Studio.
 
-Place these in a folder and copy it over to `~/.config/sublime-text/Packages`. To be hosted on PackageControl some day.
+## Installation
+
+Using Package Control, bring up the command palette and install [the package](https://packagecontrol.io/packages/Phoenix%20LiveView%20Snippets) by name. Alternatively, clone this repo as a subfolder inside your `~/.config/sublime-text/Packages` folder.
+
+## Snippets included
 
 Included:
 
@@ -79,5 +83,6 @@ end```
   ${0}
 end```
 
+## Contributing
 
-Pull requests for improvements welcome.
+Pull requests welcome.
